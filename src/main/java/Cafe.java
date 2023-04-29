@@ -27,10 +27,9 @@ public class Cafe {
 
     @Override
     public String toString() {
-        return "Cafe{" +
-                "gramosCafe=" + gramosCafe +
-                ", mililitrosAgua=" + mililitrosAgua +
-                ", tamano='" + tamano + '\'' +
-                '}';
+        return "Cafe: " +
+                gramosCafe + "gr " +
+                mililitrosAgua + "ml " +
+                "Tamaño: " + tamano;
     }
 }

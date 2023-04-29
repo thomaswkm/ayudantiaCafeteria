@@ -20,26 +20,44 @@ public class Cafeteria {
         return listaCafes;
     }
 
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
     public void setListaCafes(ArrayList<Cafe> listaCafes) {
         this.listaCafes = listaCafes;
     }
 
-    public Cafe agregarCafe(Cafe cafe){
-        listaCafes.add(cafe);
-        return cafe;
+    public ArrayList<String> getRedesSociales() {
+        return redesSociales;
     }
 
-    public int eliminarCafe(int indice){
-        listaCafes.remove(indice);
-        return indice;
+    public void agregarCafe(Cafe cafe){
+        listaCafes.add(cafe);
     }
+
+    public void eliminarCafe(int indice){
+        listaCafes.remove(indice);
+    }
+
 
     public ArrayList<Cafe> buscarCafe(String tamano){
         ArrayList<Cafe> cafes = new ArrayList<>();
         for (Cafe cafe:listaCafes) {
-            cafes.add(cafe);
+            if(cafe.getTamano().equals(tamano)) {
+                cafes.add(cafe);
+            }
         }
         return cafes;
+    }
+
+    public void agregarRedSocial(String redSocial){
+        redesSociales.add(redSocial);
     }
 
     @Override
