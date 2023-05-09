@@ -5,6 +5,7 @@ public class Cafeteria {
     private String direccion;
     private ArrayList<String> redesSociales;
     private ArrayList<Cafe> listaCafes;
+    private ArrayList<Alfajor> listaAlfajores = new ArrayList<Alfajor>();
 
     public Cafeteria(String nombre, String direccion, ArrayList<String> redesSociales, ArrayList<Cafe> listaCafes) {
         this.nombre = nombre;
@@ -58,6 +59,25 @@ public class Cafeteria {
 
     public void agregarRedSocial(String redSocial){
         redesSociales.add(redSocial);
+    }
+
+
+    public void agregarAlfajor(Alfajor alfajor) {
+        listaAlfajores.add(alfajor);
+    }
+
+    public void eliminarAlfajor(int indice) {
+        listaAlfajores.remove(indice);
+    }
+
+    public ArrayList<Alfajor> buscarAlfajor(String tamano) {
+        ArrayList<Alfajor> alfajores = new ArrayList<>();
+        for (Alfajor alfajor: listaAlfajores) {
+            if(alfajor.getTamano().equals(tamano)) {
+                alfajores.add(alfajor);
+            }
+        }
+        return alfajores;
     }
 
     @Override
