@@ -24,4 +24,6 @@ Si se quisiera ejecutar el programa, habría que crear la clase e inicializar lo
 
 ***Relación entre clases:***
 
-La clase Cafeteria tiene una asociación respecto a las Clases Alfajor y Cafe, ya que utiliza un objeto de cada clase ***dentro de sus atributos***, los cuales son listaCafes y listaAlfajores.
+***La clase Cafeteria tiene relacion de ***asociación-agregación con la clase Cafe***. Asociación debido a que el atributo listaCafes de la clase Cafetería se llena con el objeto Cafe. Y es específicamente de agregación debido a que la Clase Cafeteria agrupa varios cafés.
+
+De igual manera a la relación anterior, ***la relación de Cafetería con Alfajor es asociación-agregación.***

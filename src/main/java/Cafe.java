@@ -1,12 +1,12 @@
 public class Cafe {
     private double gramosCafe;
     private double mililitrosAgua;
-    private String tamano;
+    private Size size;
 
-    public Cafe(double gramosCafe, double mililitrosAgua, String tamano) {
+    public Cafe(double gramosCafe, double mililitrosAgua, Size size) {
         this.gramosCafe = gramosCafe;
         this.mililitrosAgua = mililitrosAgua;
-        this.tamano = tamano;
+        this.size = size;
 
     }
 
@@ -21,8 +21,8 @@ public class Cafe {
         return mililitrosAgua;
     }
 
-    public String getTamano() {
-        return tamano;
+    public String getSize() {
+        return size.getSize();
     }
 
     @Override
@@ -30,6 +30,15 @@ public class Cafe {
         return "Cafe: " +
                 gramosCafe + "gr " +
                 mililitrosAgua + "ml " +
-                "Tamaño: " + tamano;
+                "Tamaño: " + size.getSize();
+    }
+
+    public int getCosto() {
+        return switch (size.getSize()) {
+            case "Pequeño" -> 5;
+            case "Mediano" -> 10;
+            case "Grande" -> 15;
+            default -> 0;
+        };
     }
 }

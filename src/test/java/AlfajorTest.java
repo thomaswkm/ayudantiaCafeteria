@@ -7,7 +7,7 @@ class AlfajorTest {
     Alfajor a;
     @BeforeEach
     void setUp() {
-        a = new Alfajor("Blanco", "Grande", "Manjar");
+        a = new Alfajor("Blanco", Size.GRANDE, "Manjar");
     }
 
     @Test
@@ -17,7 +17,7 @@ class AlfajorTest {
 
     @Test
     void getTamano() {
-        assertEquals("Grande",a.getTamano());
+        assertEquals("Grande",a.getSize());
     }
 
     @Test

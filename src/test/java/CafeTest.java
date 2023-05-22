@@ -7,7 +7,7 @@ class CafeTest {
     Cafe c;
     @BeforeEach
     void setUp() {
-        c = new Cafe(10, 200, "Grande");
+            c = new Cafe(10, 200, Size.GRANDE);
     }
 
     @Test
@@ -22,7 +22,7 @@ class CafeTest {
 
     @Test
     void getTamano() {
-        assertEquals("Grande",c.getTamano());
+        assertEquals("Grande",c.getSize());
     }
 
     @Test

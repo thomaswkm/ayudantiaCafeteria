@@ -14,15 +14,15 @@ class CafeteriaTest {
 
     @BeforeEach
     void setUp() {
-        cafeUno = new Cafe(5, 100, "Pequeño");
-        cafeDos = new Cafe(10, 150, "Mediano");
-        cafeTres = new Cafe(15, 200, "Grande");
+        cafeUno = new Cafe(5, 100, Size.PEQUENO);
+        cafeDos = new Cafe(10, 150, Size.MEDIANO);
+        cafeTres = new Cafe(15, 200, Size.GRANDE);
 
         ArrayList<Cafe> cafes = new ArrayList<>();
         cafes.add(cafeUno);
         cafes.add(cafeDos);
 
-        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),cafes);
+        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),cafes,null,null);
 
     }
 
