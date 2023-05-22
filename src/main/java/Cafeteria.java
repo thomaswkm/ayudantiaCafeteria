@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Cafeteria {
     private String nombre;
@@ -100,5 +101,13 @@ public class Cafeteria {
                 ", redesSociales=" + redesSociales +
                 ", listaCafes=" + listaCafes +
                 '}';
+    }
+
+    public ArrayList<Trabajador> getListaTrabajadores() {
+        return listaTrabajadores;
+    }
+
+    public ArrayList<Alfajor> getListaAlfajores() {
+        return listaAlfajores;
     }
 }

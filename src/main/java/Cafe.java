@@ -2,11 +2,13 @@ public class Cafe {
     private double gramosCafe;
     private double mililitrosAgua;
     private Size size;
+    private Categoria categoria;
 
     public Cafe(double gramosCafe, double mililitrosAgua, Size size) {
         this.gramosCafe = gramosCafe;
         this.mililitrosAgua = mililitrosAgua;
         this.size = size;
+        categoria = Categoria.CAFE;
 
     }
 

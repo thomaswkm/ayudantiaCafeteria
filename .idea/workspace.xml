@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d48d5c9-1d06-489e-8ea7-b6ecfff1065c" name="Changes" comment="implementacion PU">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RolTrabajador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Trabajador.java" afterDir="false" />
+    <list default="true" id="5d48d5c9-1d06-489e-8ea7-b6ecfff1065c" name="Changes" comment="Implementación Clase Cliente, Clase Trabajador, ENUMS para rolTrabajador y Size.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Galleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Alfajor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Alfajor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cafe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cafeteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cafeteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AlfajorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AlfajorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CafeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CafeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,27 +83,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ayudantiaCafeteria" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AlfajorTest">
     <configuration name="AlfajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AlfajorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ayudantiaCafeteria" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CafeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,23 +102,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CafeteriaTest.buscarCafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CafeteriaTest.agregarAlfajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
-      <option name="METHOD_NAME" value="buscarCafeTest" />
+      <option name="METHOD_NAME" value="agregarAlfajorTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CafeteriaTest.agregarTrabajadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ayudantiaCafeteria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
+      <option name="METHOD_NAME" value="agregarTrabajadorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ayudantiaCafeteria" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AlfajorTest" />
-        <item itemvalue="JUnit.CafeTest" />
-        <item itemvalue="JUnit.CafeteriaTest.buscarCafeTest" />
+        <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.CafeteriaTest" />
+        <item itemvalue="JUnit.CafeteriaTest.agregarAlfajorTest" />
+        <item itemvalue="JUnit.CafeteriaTest.agregarTrabajadorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682809001362</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementación Clase Cliente, Clase Trabajador, ENUMS para rolTrabajador y Size.">
+      <created>1684714883670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684714883670</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +180,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementacion PU" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementacion PU" />
+    <MESSAGE value="Implementación Clase Cliente, Clase Trabajador, ENUMS para rolTrabajador y Size." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación Clase Cliente, Clase Trabajador, ENUMS para rolTrabajador y Size." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ayudantiaCafeteria$CafeteriaTest_buscarCafeTest.ic" NAME="CafeteriaTest.buscarCafeTest Coverage Results" MODIFIED="1684711933371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.Array;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,6 +12,9 @@ class CafeteriaTest {
     Cafe cafeUno;
     Cafe cafeDos;
     Cafe cafeTres;
+    Alfajor a;
+    Trabajador t;
+
 
     @BeforeEach
     void setUp() {
@@ -19,10 +23,18 @@ class CafeteriaTest {
         cafeTres = new Cafe(15, 200, Size.GRANDE);
 
         ArrayList<Cafe> cafes = new ArrayList<>();
+        ArrayList<Trabajador> trabajadores = new ArrayList<>();
+        ArrayList<Alfajor> alfajores = new ArrayList<>();
+
+
         cafes.add(cafeUno);
         cafes.add(cafeDos);
 
-        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),cafes,null,null);
+        a = new Alfajor("Blanco",Size.GRANDE,"Manjar");
+        t = new Trabajador(RolTrabajador.BARISTA,"nombre",1);
+
+
+        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),cafes,alfajores,trabajadores);
 
     }
 
@@ -51,6 +63,19 @@ class CafeteriaTest {
         String rs = "Test: www.test.com";
         cafeteria.agregarRedSocial(rs);
         assertTrue(cafeteria.getRedesSociales().contains(rs));
+    }
+
+    @Test
+    void agregarAlfajorTest(){
+        cafeteria.agregarAlfajor(a);
+        assertTrue(cafeteria.getListaAlfajores().contains(a));
+    }
+
+    @Test
+    void agregarTrabajadorTest(){
+        cafeteria.agregarTrabajador(t);
+        assertTrue(cafeteria.getListaTrabajadores().contains(t));
+
     }
 
 }

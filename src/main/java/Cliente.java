@@ -20,6 +20,7 @@ public class Cliente {
         if(this.dinero>=cafe.getCosto()){
             dinero -= cafe.getCosto();
             System.out.println("El cliente "+this.nombre+ " ha comprado un "+cafe);
+            System.out.println("Costo: "+cafe.getCosto());
         }else{
             System.out.println("Dinero insuficiente");
         }
@@ -29,6 +30,7 @@ public class Cliente {
         if(this.dinero>=alfajor.getCosto()){
             dinero -= alfajor.getCosto();
             System.out.println("El cliente "+this.nombre+ " ha comprado un "+alfajor);
+            System.out.println("Costo: "+alfajor.getCosto());
         }else{
             System.out.println("Dinero insuficiente");
         }

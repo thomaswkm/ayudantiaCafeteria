@@ -2,6 +2,7 @@ public class Alfajor {
 	private String color;
 	private Size size;
 	private String relleno;
+	private Categoria categoria;
 
 	public String getColor() {
 		return color;
@@ -19,6 +20,7 @@ public class Alfajor {
 		this.color = color;
 		this.size = size;
 		this.relleno = relleno;
+		categoria = Categoria.ALFAJOR;
 	}
 
 	public Alfajor() {
