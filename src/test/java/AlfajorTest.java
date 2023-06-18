@@ -1,3 +1,5 @@
+import model.Alfajor;
+import model.Size;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

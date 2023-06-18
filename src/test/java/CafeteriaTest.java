@@ -1,7 +1,7 @@
+import model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,8 +12,8 @@ class CafeteriaTest {
     Cafe cafeUno;
     Cafe cafeDos;
     Cafe cafeTres;
-    Alfajor a;
-    Trabajador t;
+    Alfajor alfajor;
+    Trabajador trabajador;
 
 
     @BeforeEach
@@ -22,19 +22,18 @@ class CafeteriaTest {
         cafeDos = new Cafe(10, 150, Size.MEDIANO);
         cafeTres = new Cafe(15, 200, Size.GRANDE);
 
-        ArrayList<Cafe> cafes = new ArrayList<>();
+        ArrayList<Producto> productos = new ArrayList<>();
         ArrayList<Trabajador> trabajadores = new ArrayList<>();
-        ArrayList<Alfajor> alfajores = new ArrayList<>();
 
 
-        cafes.add(cafeUno);
-        cafes.add(cafeDos);
+        productos.add(cafeUno);
+        productos.add(cafeDos);
 
-        a = new Alfajor("Blanco",Size.GRANDE,"Manjar");
-        t = new Trabajador(RolTrabajador.BARISTA,"nombre",1);
+        alfajor = new Alfajor("Blanco",Size.GRANDE,"Manjar");
+        trabajador = new Trabajador(RolTrabajador.BARISTA,"nombre",1);
 
 
-        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),cafes,alfajores,trabajadores);
+        cafeteria = new Cafeteria("nombrePrueba","direccionPrueba",new ArrayList<>(),productos,trabajadores,new ArrayList<>());
 
     }
 
@@ -53,9 +52,9 @@ class CafeteriaTest {
 
     @Test
     void buscarCafeTest() {
-        assertEquals(1, cafeteria.buscarCafe("Pequeño").size());
-        assertEquals(1, cafeteria.buscarCafe("Mediano").size());
-        assertEquals(0, cafeteria.buscarCafe("Grande").size());
+        assertEquals(1, cafeteria.buscarCafePorTamaño(cafeteria.getListaCafes(),"Pequeño").size());
+        assertEquals(1, cafeteria.buscarCafePorTamaño(cafeteria.getListaCafes(),"Mediano").size());
+        assertEquals(0, cafeteria.buscarCafePorTamaño(cafeteria.getListaCafes(),"Grande").size());
     }
 
     @Test
@@ -67,14 +66,14 @@ class CafeteriaTest {
 
     @Test
     void agregarAlfajorTest(){
-        cafeteria.agregarAlfajor(a);
-        assertTrue(cafeteria.getListaAlfajores().contains(a));
+        cafeteria.agregarAlfajor(alfajor);
+        assertTrue(cafeteria.getListaAlfajores().contains(alfajor));
     }
 
     @Test
     void agregarTrabajadorTest(){
-        cafeteria.agregarTrabajador(t);
-        assertTrue(cafeteria.getListaTrabajadores().contains(t));
+        cafeteria.agregarTrabajador(trabajador);
+        assertTrue(cafeteria.getListaTrabajadores().contains(trabajador));
 
     }
 

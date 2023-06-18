@@ -1,18 +1,21 @@
-public class Cafe {
+package model;
+
+public class Cafe extends Producto {
     private double gramosCafe;
     private double mililitrosAgua;
-    private Size size;
-    private Categoria categoria;
 
     public Cafe(double gramosCafe, double mililitrosAgua, Size size) {
+        super(size,Categoria.CAFE);
         this.gramosCafe = gramosCafe;
         this.mililitrosAgua = mililitrosAgua;
-        this.size = size;
-        categoria = Categoria.CAFE;
 
     }
-
     public Cafe() {
+        super(null,Categoria.CAFE);
+    }
+
+    public String getTipo(){
+        return "Café";
     }
 
     public double getGramosCafe() {
@@ -29,13 +32,13 @@ public class Cafe {
 
     @Override
     public String toString() {
-        return "Cafe: " +
+        return "model.Cafe: " +
                 gramosCafe + "gr " +
                 mililitrosAgua + "ml " +
                 "Tamaño: " + size.getSize();
     }
 
-    public int getCosto() {
+    public int getPrecio() {
         return switch (size.getSize()) {
             case "Pequeño" -> 5;
             case "Mediano" -> 10;

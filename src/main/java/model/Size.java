@@ -1,3 +1,5 @@
+package model;
+
 public enum Size {
     PEQUENO("Pequeño"),
     MEDIANO("Mediano"),

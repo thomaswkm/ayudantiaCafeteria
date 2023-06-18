@@ -1,3 +1,5 @@
+package model;
+
 public class Trabajador {
 
     private RolTrabajador rol;
@@ -36,7 +38,7 @@ public class Trabajador {
 
     @Override
     public String toString() {
-        return "Trabajador{" +
+        return "model.Trabajador{" +
                 "rol=" + rol +
                 ", nombre='" + nombre + '\'' +
                 ", id=" + id +

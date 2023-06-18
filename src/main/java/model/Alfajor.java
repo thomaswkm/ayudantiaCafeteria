@@ -1,8 +1,22 @@
-public class Alfajor {
+package model;
+
+public class Alfajor extends Producto {
 	private String color;
-	private Size size;
 	private String relleno;
-	private Categoria categoria;
+
+	public Alfajor(String color, Size size, String relleno) {
+		super(size,Categoria.ALFAJOR);
+		this.color = color;
+		this.relleno = relleno;
+	}
+
+	public Alfajor() {
+		super(null, Categoria.ALFAJOR);
+	}
+
+	public String getTipo(){
+		return "model.Alfajor";
+	}
 
 	public String getColor() {
 		return color;
@@ -16,27 +30,17 @@ public class Alfajor {
 		return relleno;
 	}
 
-	public Alfajor(String color, Size size, String relleno) {
-		this.color = color;
-		this.size = size;
-		this.relleno = relleno;
-		categoria = Categoria.ALFAJOR;
-	}
-
-	public Alfajor() {
-
-	}
 
 	@Override
 	public String toString() {
-		return "Alfajor{" +
+		return "model.Alfajor{" +
 				"color='" + color + '\'' +
 				", tamano='" + size + '\'' +
 				", relleno='" + relleno + '\'' +
 				'}';
 	}
 
-	public int getCosto() {
+	public int getPrecio() {
 		return switch (size.getSize()) {
 			case "Pequeño" -> 5;
 			case "Mediano" -> 10;

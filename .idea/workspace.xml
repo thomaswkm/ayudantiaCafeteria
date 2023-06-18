@@ -4,16 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d48d5c9-1d06-489e-8ea7-b6ecfff1065c" name="Changes" comment="Implementación Clase Cliente, Clase Trabajador, ENUMS para rolTrabajador y Size.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Galleta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
+    <list default="true" id="5d48d5c9-1d06-489e-8ea7-b6ecfff1065c" name="Changes" comment="Entrega Ayudantia 04.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/GestorDatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Boleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Cafeteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Galleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/GestorDatosTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Alfajor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Alfajor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cafeteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cafeteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Alfajor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Alfajor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Cafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cafeteria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Galleta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RolTrabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RolTrabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Trabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AlfajorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AlfajorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CafeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CafeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CafeteriaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,23 +90,15 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\thoma\IdeaProjects\ayudantiaCafeteria\src\main\java" />
       <recent name="C:\Users\thoma\IdeaProjects\ayudantiaCafeteria\UML" />
+      <recent name="C:\Users\thoma\IdeaProjects\ayudantiaCafeteria\src\main\java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="data" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AlfajorTest">
-    <configuration name="AlfajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ayudantiaCafeteria" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AlfajorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CafeteriaTest">
     <configuration name="CafeteriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,42 +108,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CafeteriaTest.agregarAlfajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CafeteriaTest.agregarCafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
-      <option name="METHOD_NAME" value="agregarAlfajorTest" />
+      <option name="METHOD_NAME" value="agregarCafeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CafeteriaTest.agregarTrabajadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CafeteriaTest.agregarRedSocialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
-      <option name="METHOD_NAME" value="agregarTrabajadorTest" />
+      <option name="METHOD_NAME" value="agregarRedSocialTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CafeteriaTest.eliminarCafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ayudantiaCafeteria" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClienteTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CafeteriaTest" />
+      <option name="METHOD_NAME" value="eliminarCafeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in ayudantiaCafeteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ayudantiaCafeteria" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AlfajorTest" />
-        <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.CafeteriaTest" />
-        <item itemvalue="JUnit.CafeteriaTest.agregarAlfajorTest" />
-        <item itemvalue="JUnit.CafeteriaTest.agregarTrabajadorTest" />
+        <item itemvalue="JUnit.CafeteriaTest.agregarRedSocialTest" />
+        <item itemvalue="JUnit.CafeteriaTest.eliminarCafeTest" />
+        <item itemvalue="JUnit.java in ayudantiaCafeteria" />
+        <item itemvalue="JUnit.CafeteriaTest.agregarCafeTest" />
       </list>
     </recent_temporary>
   </component>

@@ -1,3 +1,5 @@
+import model.Cafe;
+import model.Size;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,6 +29,6 @@ class CafeTest {
 
     @Test
     void testToString() {
-        assertEquals("Cafe: 10.0gr 200.0ml Tamaño: Grande",c.toString());
+        assertEquals("model.Cafe: 10.0gr 200.0ml Tamaño: Grande",c.toString());
     }
 }

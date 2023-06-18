@@ -1,7 +1,9 @@
+package model;
+
 public enum Categoria {
-    CAFE("Cafe"),
-    ALFAJOR("Alfajor"),
-    GALLETA("Galleta");
+    CAFE("model.Cafe"),
+    ALFAJOR("model.Alfajor"),
+    GALLETA("model.Galleta");
 
     private String categoria;
 

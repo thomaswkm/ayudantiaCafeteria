@@ -1,3 +1,5 @@
+package model;
+
 public enum RolTrabajador {
     BARISTA("Barista"),
     MESERO("Mesero"),
